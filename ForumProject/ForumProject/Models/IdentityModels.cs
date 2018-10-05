@@ -5,6 +5,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.Collections.Generic;
 using ForumProject.Entities;
+using ForumProject.Seed;
 
 namespace ForumProject.Models
 {
@@ -30,6 +31,7 @@ namespace ForumProject.Models
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
+            Database.SetInitializer(new ForumProjectInitializer());
         }
 
 

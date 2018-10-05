@@ -8,8 +8,8 @@ using System.Web;
 namespace ForumProject.Entities
 {
     public class MainCategoryByCities
-    {
-        public int MainCategoryID { get; set; }
+    {   
+        public int MainCategoryByCitiesId { get; set; }
         public string CityName { get; set; }
 
         public ICollection<IntermediateCategory> IntermediateCategory { get; set; }
@@ -19,12 +19,11 @@ namespace ForumProject.Entities
 
     public class IntermediateCategory
     {
-        public int IntermediateCategoryID { get; set; }
+        public int IntermediateCategoryId{ get; set; }
 
         public string NameOfMainCategory { get; set; }
 
-        public int MainCategoryID { get; set; }
-        public MainCategoryByCities MainCategoryByCities { get; set; }
+        public ICollection<MainCategoryByCities> MainCategoryByCities { get; set; }
 
         public ICollection<Topic> Topic { get; set; }
 
@@ -34,17 +33,17 @@ namespace ForumProject.Entities
 
 
 
-
+    //Wątek
     public class Topic
     {
-        public int TopicID { get; set; }
+        public int TopicId { get; set; }
 
         public int TopicName { get; set; }
 
         [DataType(DataType.Date)]
         public DateTime TopicTime { get; set; }
 
-        public int IntermediateCategoryID { get; set; }
+        public int IntermediateCategoryId { get; set; }
         public IntermediateCategory IntermediateCategory { get; set; }
 
 
@@ -57,7 +56,7 @@ namespace ForumProject.Entities
     }
 
 
-
+    //Temat
     public class Comment
     {
         public int CommentID { get; set; }

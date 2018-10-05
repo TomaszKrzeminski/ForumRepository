@@ -131,8 +131,8 @@ C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Asp
 C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
 C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.Security.dll
 C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Owin.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\EntityFramework.dll
+C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.Security.Cookies.dll
 C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
 C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\ForumProject.Domain.pdb
@@ -157,8 +157,8 @@ C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.Op
 C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
 C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.Security.xml
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\EntityFramework.xml
+C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.Security.Cookies.xml
 C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
 C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\obj\Debug\ForumProject.Tests.Unit.csprojResolveAssemblyReference.cache

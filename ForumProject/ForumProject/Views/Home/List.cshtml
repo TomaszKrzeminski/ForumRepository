@@ -1,0 +1,12 @@
+﻿@using ForumProject.Entities
+@model  IEnumerable<MainCategoryByCities>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+@foreach (var item in @Model)
+{
+    <div>@item.CityName</div>
+}

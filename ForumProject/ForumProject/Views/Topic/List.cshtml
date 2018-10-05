@@ -1,0 +1,14 @@
+﻿@using ForumProject.Entities
+@model IEnumerable<Topic>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+@foreach (var T in Model)
+{
+    <div>
+        <h3>@T.TopicName    @T.TopicTime</h3>
+    </div>
+}

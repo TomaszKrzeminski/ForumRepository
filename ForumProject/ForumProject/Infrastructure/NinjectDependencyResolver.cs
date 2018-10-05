@@ -1,4 +1,6 @@
-﻿using Ninject;
+﻿using ForumProject.Concrete;
+using ForumProject.Repository;
+using Ninject;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,6 +31,9 @@ namespace ForumProject.Infrastructure
 
         private void AddBindings()
         {
+            kernel.Bind<ITopicRepository>().To<EFTopicRepository>();
+            kernel.Bind<IMainCategoryByCitiesRepository>().To<EFMainCategoryByCitiesRepository>();
+            kernel.Bind<IIntermediateCategoryRepository>().To<EFIntermediateCategoryRepository>();
 
         }
 
