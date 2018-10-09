@@ -1,0 +1,14 @@
+﻿@using ForumProject.Entities
+
+@model  IEnumerable<IntermediateCategory>
+
+@{
+    ViewBag.Title = "Show_IntermediateCategory_List";
+}
+
+  @foreach (var categories in Model)
+  {
+      
+      <div>@Html.ActionLink(categories.NameOfMainCategory,"Show_Topics", new {controller="Topic",action= "Show_Topics",id=categories.IntermediateCategoryId },new {@class="btn  btn-default btn-lg" })</div>
+  }
+

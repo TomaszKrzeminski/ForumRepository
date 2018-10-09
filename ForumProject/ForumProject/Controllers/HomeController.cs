@@ -1,4 +1,5 @@
-﻿using ForumProject.Repository;
+﻿using ForumProject.Entities;
+using ForumProject.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +12,12 @@ namespace ForumProject.Controllers
     {
 
         private IMainCategoryByCitiesRepository repository;
+        private IIntermediateCategoryRepository repositoryIntermediate;
 
-
-        public HomeController(IMainCategoryByCitiesRepository repository)
+        public HomeController(IMainCategoryByCitiesRepository repository, IIntermediateCategoryRepository repositoryIntermediate)
         {
             this.repository = repository;
+            this.repositoryIntermediate = repositoryIntermediate;
         }
 
 
@@ -31,6 +33,36 @@ namespace ForumProject.Controllers
             return View(repository.MainCategoryByCities);
 
         }
+
+
+
+        public ViewResult Show_IntermediateCategory_List(int id=0)
+        {
+            List<IntermediateCategory> list = new List<IntermediateCategory>();
+
+            list = repositoryIntermediate.GetIntermediateCategory_ById(id).ToList();
+
+
+
+            return View(list);
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -214,6 +214,3 @@ C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.AI.Web.xml
 C:\ForumProjectRepo\ForumProject\ForumProject\obj\Debug\ForumProject.WebUI.csprojResolveAssemblyReference.cache
 C:\ForumProjectRepo\ForumProject\ForumProject\obj\Debug\ForumProject.dll
 C:\ForumProjectRepo\ForumProject\ForumProject\obj\Debug\ForumProject.pdb
-C:\ForumProjectRepo\ForumProject\ForumProject\obj\Debug\ForumProject.Migrations.InitialCreate.resources
-C:\ForumProjectRepo\ForumProject\ForumProject\obj\Debug\ForumProject.WebUI.csproj.GenerateResource.Cache
-C:\ForumProjectRepo\ForumProject\ForumProject\obj\Debug\ForumProject.Migrations.Inicjalization.resources

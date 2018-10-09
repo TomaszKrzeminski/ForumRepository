@@ -211,15 +211,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\NinjectDependencyResolver.cs" />
-    <Compile Include="Migrations\201810050705428_InitialCreate.cs" />
-    <Compile Include="Migrations\201810050705428_InitialCreate.Designer.cs">
-      <DependentUpon>201810050705428_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201810050709333_Inicjalization.cs" />
-    <Compile Include="Migrations\201810050709333_Inicjalization.Designer.cs">
-      <DependentUpon>201810050709333_Inicjalization.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -285,8 +276,10 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Topic\List.cshtml" />
     <Content Include="Views\Home\List.cshtml" />
+    <Content Include="Views\Home\Show_IntermediateCategory_List.cshtml" />
+    <Content Include="Views\Topic\Show_Topics.cshtml" />
+    <Content Include="Views\Topic\Add_New_Topic.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -311,14 +304,6 @@
       <Project>{99ddd656-2f4c-43aa-871a-19c0e2004b1f}</Project>
       <Name>ForumProject.Domain</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201810050705428_InitialCreate.resx">
-      <DependentUpon>201810050705428_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810050709333_Inicjalization.resx">
-      <DependentUpon>201810050709333_Inicjalization.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

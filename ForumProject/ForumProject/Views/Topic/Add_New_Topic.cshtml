@@ -1,0 +1,55 @@
+﻿@using ForumProject.Entities
+@model Topic
+@{
+    ViewBag.Title = "Add_New_Topic";
+}
+
+<h2>Add_New_Topic</h2>
+
+
+
+
+
+<div class="col-md-3 ">
+    @using (Html.BeginForm("Add_New_Topic", "Topic"))
+            {
+
+
+
+
+        //public int TopicName { get; set; }
+
+        //[DataType(DataType.Date)]
+        //public DateTime TopicTime { get; set; }
+
+        //public int IntermediateCategoryId { get; set; }
+        //public IntermediateCategory IntermediateCategory { get; set; }
+
+
+       <div>
+           <label>Topic Name</label>
+           @Html.TextBox("TopicName",Model.TopicName)
+       </div>
+
+
+    <div>
+      
+        @Html.Hidden("TopicTime", DateTime.Now)
+    </div>
+
+
+    <div>
+
+        @Html.Hidden("IntermediateCategoryId",(int)ViewBag.InterId)
+    </div>
+
+
+
+
+
+        <input class="btn btn-warning col-md-9" type="submit" value="New Topic" />
+
+
+    }
+
+</div>

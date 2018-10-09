@@ -1,4 +1,5 @@
-﻿using ForumProject.Repository;
+﻿using ForumProject.Entities;
+using ForumProject.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,9 +16,36 @@ namespace ForumProject.Controllers
             this.repository = repository;
         }
 
-        public ViewResult List()
+        public ViewResult Show_Topics(int id)
         {
-            return View(repository.Topics);
+
+            ViewBag.IntermediateCategory_Id = id;
+
+            List<Topic> TopicList = repository.Get_Topics_ByIntermediateCategory(id).ToList();
+
+
+            return View(TopicList);
         }
+
+
+        public ViewResult Add_New_Topic(int id)
+        {
+            MainCategoryByCities maincategory = repository.Get_MainCategoryByCities_To_Add(id);
+            ViewBag.InterId = maincategory.MainCategoryByCitiesId;
+
+            return View(new Topic());
+        }
+
+
+        [HttpPost]
+        public RedirectToRouteResult Add_New_Topic(Topic topic)
+        {
+            repository.Add_New_Topic_To_Database(topic);
+
+            return RedirectToAction("Show_Topics",new {controller="Topic",action="Show_Topics",id=topic.IntermediateCategoryId });
+        }
+
+
+
     }
 }

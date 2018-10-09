@@ -1,0 +1,14 @@
+﻿@using ForumProject.Entities
+@model IEnumerable<Topic> 
+
+@{
+    ViewBag.Title = "Show_Topics";
+}
+<div>@ViewBag.IntermediateCategory_Id</div>
+<div>@Html.ActionLink("Add New Topic", "Add_New_Topic",new {controller="Topic",action= "Add_New_Topic",id=ViewBag.IntermediateCategory_Id })</div>
+
+@foreach (var topic in Model)
+{
+    <div>@topic.TopicName   @topic.TopicTime</div>
+}
+

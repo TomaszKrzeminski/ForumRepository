@@ -12,7 +12,8 @@ namespace ForumProject.Tests.Unit
         [Test]
         public void Check()
         {
-
+            int x = 5;
+            Assert.AreEqual(x, 6);
         }
 
     }

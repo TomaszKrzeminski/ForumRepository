@@ -8,5 +8,7 @@
 
 @foreach (var item in @Model)
 {
-    <div>@item.CityName</div>
+    
+    <div>@Html.ActionLink(item.CityName, "Show_IntermediateCategory_List",new {controller="Home",action= "Show_IntermediateCategory_List",id=item.MainCategoryByCitiesId },new {@class="btn  btn-default btn-lg" })</div>
+    <div>@item.MainCategoryByCitiesId</div>
 }
