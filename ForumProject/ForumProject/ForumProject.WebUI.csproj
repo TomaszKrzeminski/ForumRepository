@@ -280,6 +280,7 @@
     <Content Include="Views\Home\Show_IntermediateCategory_List.cshtml" />
     <Content Include="Views\Topic\Show_Topics.cshtml" />
     <Content Include="Views\Topic\Add_New_Topic.cshtml" />
+    <Content Include="Views\Topic\Go_To_Topic.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

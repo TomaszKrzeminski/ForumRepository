@@ -4,11 +4,15 @@
 @{
     ViewBag.Title = "Show_Topics";
 }
+
 <div>@ViewBag.IntermediateCategory_Id</div>
+
+
+
 <div>@Html.ActionLink("Add New Topic", "Add_New_Topic",new {controller="Topic",action= "Add_New_Topic",id=ViewBag.IntermediateCategory_Id })</div>
 
 @foreach (var topic in Model)
 {
-    <div>@topic.TopicName   @topic.TopicTime</div>
+    <div> @Html.ActionLink(@topic.TopicName,"Go_To_Topic",new {controller="Topic",action="Go_To_Topic",id=@topic.TopicId }, new { @class = "btn  btn-danger btn-lg" })    @topic.ApplicationUser.UserName    @topic.IntermediateCategory.NameOfMainCategory</div>
 }
 

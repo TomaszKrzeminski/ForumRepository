@@ -36,7 +36,7 @@ namespace ForumProject.Controllers
 
 
 
-        public ViewResult Show_IntermediateCategory_List(int id=0)
+        public ViewResult Show_IntermediateCategory_List(int id)
         {
             List<IntermediateCategory> list = new List<IntermediateCategory>();
 

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using ForumProject.Entities;
 using ForumProject.Models;
+using Microsoft.AspNet.Identity;
 
 namespace ForumProject.Concrete
 {
@@ -16,12 +17,17 @@ namespace ForumProject.Concrete
             get { return context.Topics; }
         }
 
-        public bool Add_New_Topic_To_Database(Topic topic)
+        public bool Add_New_Topic_To_Database(Topic topic,string UserId)
         {
 
             //int MainCategoryId = context.IntermediateCategories.Include("MainCategoryByCities").Where(x => x.IntermediateCategoryId == topic.IntermediateCategoryId).Select(y => y.MainCategoryByCitiesId).First();
             //MainCategoryByCities main = context.MainCategoryByCities.Find(MainCategoryId);
             //main.
+
+            ApplicationUser user = context.Users.Find(UserId);
+            user.Topics.Add(topic);
+
+
 
             IntermediateCategory inter = context.IntermediateCategories.Find(topic.IntermediateCategoryId);
             inter.Topic.Add(topic);
