@@ -211,9 +211,20 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\NinjectDependencyResolver.cs" />
+    <Compile Include="Migrations\201810091538271_InitialCreate.cs" />
+    <Compile Include="Migrations\201810091538271_InitialCreate.Designer.cs">
+      <DependentUpon>201810091538271_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810100956033_Comments.cs" />
+    <Compile Include="Migrations\201810100956033_Comments.Designer.cs">
+      <DependentUpon>201810100956033_Comments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AddingCommentViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\TopicViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\ITopicRepository.cs" />
     <Compile Include="Seed\ForumProjectInitializer.cs" />
@@ -281,6 +292,7 @@
     <Content Include="Views\Topic\Show_Topics.cshtml" />
     <Content Include="Views\Topic\Add_New_Topic.cshtml" />
     <Content Include="Views\Topic\Go_To_Topic.cshtml" />
+    <Content Include="Views\Topic\Add_New_Comment.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -305,6 +317,14 @@
       <Project>{99ddd656-2f4c-43aa-871a-19c0e2004b1f}</Project>
       <Name>ForumProject.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201810091538271_InitialCreate.resx">
+      <DependentUpon>201810091538271_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810100956033_Comments.resx">
+      <DependentUpon>201810100956033_Comments.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

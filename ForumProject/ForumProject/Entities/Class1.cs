@@ -43,6 +43,8 @@ namespace ForumProject.Entities
 
         public string TopicName { get; set; }
 
+        public string TopicData { get; set; }
+
         [DataType(DataType.Date)]
         public DateTime TopicTime { get; set; }
 

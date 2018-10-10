@@ -1,4 +1,5 @@
 ﻿using ForumProject.Entities;
+using ForumProject.Models;
 using ForumProject.Repository;
 using Microsoft.AspNet.Identity;
 using System;
@@ -52,10 +53,40 @@ namespace ForumProject.Controllers
 
         public ActionResult Go_To_Topic(int id)
         {
+            TopicViewModel viewModel = repository.Get_Topic_ViewModel(id);
 
-
-            return View();
+            return View(viewModel);
         }
+
+
+        [Authorize]
+        public ActionResult Add_New_Comment(int id)
+        {
+
+            Topic topic = repository.Get_Topic_By_Id(id);
+
+            AddingCommentViewModel adding = new AddingCommentViewModel();
+
+            adding.topic = topic;
+
+
+            
+            return View(adding);
+            
+        }
+
+        [HttpPost]
+        [Authorize]
+        public RedirectToRouteResult Add_New_Comment(Comment comment)
+        {
+            string UserId = User.Identity.GetUserId();
+            repository.Add_New_Comment_To_Topic(comment,UserId);
+
+            return RedirectToAction("Go_To_Topic", new { controller = "Topic", action = "Go_To_Topic", id = comment.TopicID });
+
+        }
+
+
 
     }
 }

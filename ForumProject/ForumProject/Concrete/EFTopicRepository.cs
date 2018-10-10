@@ -17,6 +17,26 @@ namespace ForumProject.Concrete
             get { return context.Topics; }
         }
 
+        public bool Add_New_Comment_To_Topic(Comment comment,string UserId)
+        {
+
+            Topic topic = context.Topics.Find(comment.TopicID);
+            topic.Comment.Add(comment);
+
+            ApplicationUser user = context.Users.Find(UserId);
+            user.Comments.Add(comment);
+
+            context.SaveChanges();
+
+            return true;
+
+
+
+
+
+
+        }
+
         public bool Add_New_Topic_To_Database(Topic topic,string UserId)
         {
 
@@ -55,10 +75,50 @@ namespace ForumProject.Concrete
             return topics;
         }
 
+        public Topic Get_Topic_By_Id(int id)
+        {
+            Topic topic = context.Topics.Find(id);
+
+            if(topic!=null)
+            {
+               return topic;
+            }
+            else
+            {
+                Topic t = null;
+               
+                return t;
+            }
+           
+        }
+
+        public TopicViewModel Get_Topic_ViewModel(int id)
+        {
+            Topic topic = context.Topics.Where(t => t.TopicId == id).First();
+            List<Comment> commentList = new List<Comment>();
+
+            commentList = topic.Comment.ToList();
+
+            TopicViewModel viewModel = new TopicViewModel();
+            viewModel.topic = topic;
+
+            if (commentList != null)
+            {
+                viewModel.comment_List = commentList;
+            }
+
+            string UserName = topic.ApplicationUser.UserName;
+
+            viewModel.userName = UserName;
 
 
 
 
+            return viewModel;
+
+
+
+        }
     }
 
     public class EFMainCategoryByCitiesRepository : IMainCategoryByCitiesRepository

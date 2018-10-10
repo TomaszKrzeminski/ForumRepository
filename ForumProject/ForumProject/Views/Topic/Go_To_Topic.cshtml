@@ -1,7 +1,38 @@
-﻿
+﻿@using ForumProject.Models
+@model TopicViewModel
+
+
+
 @{
     ViewBag.Title = "Go_To_Topic";
 }
 
 <h2>Go_To_Topic</h2>
 
+<h2>@Model.topic.TopicName</h2>
+<h6>@Model.userName  @Model.topic.TopicTime</h6>
+<h3>@Model.topic.TopicData</h3>
+
+
+<div>
+   @Html.ActionLink("Add New Comment", "Add_New_Comment", new {controller="Topic",action="Add_New_Comment",id=Model.topic.TopicId }, new {@class="btn btn-block btn-default btn-lg" })
+</div>
+
+
+
+<div>
+    @foreach (var comment in Model.comment_List)
+    {
+        <div>
+            <div>@comment.CommentTime    @comment.ApplicationUser.Email</div>
+            <div>
+
+                @comment.CommentContent
+
+            </div>
+
+
+
+        </div>
+    }
+</div>

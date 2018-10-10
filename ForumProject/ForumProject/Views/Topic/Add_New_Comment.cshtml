@@ -1,0 +1,45 @@
+﻿@using ForumProject.Models
+@model  AddingCommentViewModel
+@{
+    ViewBag.Title = "Add_New_Comment";
+}
+
+<h2>Add_New_Comment</h2>
+
+<div>@Model.topic.TopicName         @Model.topic.TopicTime        @Model.topic.ApplicationUser.Email        </div>
+
+
+
+
+
+<div class="col-md-3 ">
+    @using (Html.BeginForm("Add_New_Comment", "Topic"))
+    {
+            
+
+
+        <div>
+            <label>Comment content</label>
+            <div>@Html.TextArea("CommentContent")</div>
+        </div>
+
+
+        <div>
+
+            @Html.Hidden("CommentTime", DateTime.Now)
+        </div>
+
+
+        <div>
+
+            @Html.Hidden("TopicID", Model.topic.TopicId)
+        </div>
+
+        
+
+        <input class="btn btn-warning col-md-9" type="submit" value="Add New Comment" />
+
+
+    }
+
+</div>
