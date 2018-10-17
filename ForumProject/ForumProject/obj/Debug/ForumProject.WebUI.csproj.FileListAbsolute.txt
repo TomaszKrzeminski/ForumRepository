@@ -106,114 +106,120 @@ C:\RepoForum\ForumProject\ForumProject\bin\Microsoft.AI.Web.xml
 C:\RepoForum\ForumProject\ForumProject\obj\Debug\ForumProject.WebUI.csprojResolveAssemblyReference.cache
 C:\RepoForum\ForumProject\ForumProject\obj\Debug\ForumProject.dll
 C:\RepoForum\ForumProject\ForumProject\obj\Debug\ForumProject.pdb
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\ApplicationInsights.config
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\csc.exe
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\csc.exe.config
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\csc.rsp
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\csi.exe
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\csi.rsp
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\System.AppContext.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\System.Collections.Immutable.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\System.IO.FileSystem.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\System.Reflection.Metadata.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\vbc.exe
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\vbc.exe.config
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\vbc.rsp
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\VBCSCompiler.exe
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\roslyn\VBCSCompiler.exe.config
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\ForumProject.dll.config
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\ForumProject.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\ForumProject.pdb
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Antlr3.Runtime.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\EntityFramework.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\EntityFramework.SqlServer.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\ForumProject.Domain.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.AI.Agent.Intercept.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.AI.DependencyCollector.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.AI.PerfCounterCollector.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.AI.ServerTelemetryChannel.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.AI.Web.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.AI.WindowsServer.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.ApplicationInsights.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.AspNet.Identity.Core.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.Owin.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.Owin.Security.Cookies.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.Owin.Security.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.Owin.Security.Facebook.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.Owin.Security.Google.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.Owin.Security.OAuth.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.Owin.Security.Twitter.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.Web.Infrastructure.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Newtonsoft.Json.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Ninject.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Ninject.Web.Common.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Ninject.Web.Mvc.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Owin.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\System.Web.Helpers.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\System.Web.Mvc.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\System.Web.Optimization.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\System.Web.Razor.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\System.Web.WebPages.Deployment.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\System.Web.WebPages.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\System.Web.WebPages.Razor.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\WebActivator.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\WebGrease.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\ForumProject.Domain.pdb
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Ninject.pdb
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Ninject.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Ninject.Web.Common.pdb
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Ninject.Web.Common.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Ninject.Web.Mvc.pdb
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Ninject.Web.Mvc.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\System.Web.Helpers.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\System.Web.Mvc.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\System.Web.Optimization.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\System.Web.Razor.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\System.Web.WebPages.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\System.Web.WebPages.Deployment.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\System.Web.WebPages.Razor.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Antlr3.Runtime.pdb
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Newtonsoft.Json.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\EntityFramework.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\EntityFramework.SqlServer.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.AspNet.Identity.Core.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.Owin.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.Owin.Security.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.Owin.Security.Facebook.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.Owin.Security.Cookies.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.Owin.Security.OAuth.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.Owin.Security.Google.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.Owin.Security.Twitter.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.ApplicationInsights.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.AI.DependencyCollector.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.AI.ServerTelemetryChannel.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.AI.WindowsServer.xml
-C:\ForumProjectRepo\ForumProject\ForumProject\bin\Microsoft.AI.Web.xml
 C:\ForumProjectRepo\ForumProject\ForumProject\obj\Debug\ForumProject.WebUI.csprojResolveAssemblyReference.cache
-C:\ForumProjectRepo\ForumProject\ForumProject\obj\Debug\ForumProject.dll
-C:\ForumProjectRepo\ForumProject\ForumProject\obj\Debug\ForumProject.pdb
 C:\ForumProjectRepo\ForumProject\ForumProject\obj\Debug\ForumProject.Migrations.InitialCreate.resources
-C:\ForumProjectRepo\ForumProject\ForumProject\obj\Debug\ForumProject.WebUI.csproj.GenerateResource.Cache
 C:\ForumProjectRepo\ForumProject\ForumProject\obj\Debug\ForumProject.Migrations.Comments.resources
+C:\ForumProjectRepo\ForumProject\ForumProject\obj\Debug\ForumProject.WebUI.csproj.GenerateResource.Cache
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.WebUI.csprojResolveAssemblyReference.cache
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.Migrations.InitialCreate.resources
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.Migrations.Comments.resources
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.WebUI.csproj.GenerateResource.Cache
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\ApplicationInsights.config
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\csc.exe
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\csc.exe.config
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\csc.rsp
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\csi.exe
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\csi.rsp
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\System.AppContext.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\System.Collections.Immutable.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\System.IO.FileSystem.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\System.Reflection.Metadata.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\vbc.exe
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\vbc.exe.config
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\vbc.rsp
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\VBCSCompiler.exe
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\VBCSCompiler.exe.config
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\ForumProject.dll.config
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\ForumProject.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\ForumProject.pdb
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Antlr3.Runtime.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\EntityFramework.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\EntityFramework.SqlServer.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\ForumProject.Domain.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.AI.DependencyCollector.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.AI.Web.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.AI.WindowsServer.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.ApplicationInsights.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.Owin.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.Owin.Security.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.Owin.Security.Google.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.Web.Infrastructure.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Moq.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Newtonsoft.Json.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Ninject.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Ninject.Web.Common.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Ninject.Web.Mvc.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Owin.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\System.Web.Helpers.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\System.Web.Mvc.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\System.Web.Optimization.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\System.Web.Razor.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\System.Web.WebPages.Deployment.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\System.Web.WebPages.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\System.Web.WebPages.Razor.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\WebActivator.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\WebGrease.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\ForumProject.Domain.pdb
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Moq.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Ninject.pdb
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Ninject.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Ninject.Web.Common.pdb
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Ninject.Web.Common.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Ninject.Web.Mvc.pdb
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Ninject.Web.Mvc.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\System.Web.Helpers.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\System.Web.Mvc.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\System.Web.Optimization.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\System.Web.Razor.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\System.Web.WebPages.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\System.Web.WebPages.Deployment.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\System.Web.WebPages.Razor.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Antlr3.Runtime.pdb
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Newtonsoft.Json.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\EntityFramework.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\EntityFramework.SqlServer.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.Owin.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.Owin.Security.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.Owin.Security.Google.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.ApplicationInsights.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.AI.DependencyCollector.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.AI.WindowsServer.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.AI.Web.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.pdb

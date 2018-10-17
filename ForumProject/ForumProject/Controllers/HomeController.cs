@@ -40,9 +40,9 @@ namespace ForumProject.Controllers
         {
             List<IntermediateCategory> list = new List<IntermediateCategory>();
 
-            list = repositoryIntermediate.GetIntermediateCategory_ById(id).ToList();
+            
 
-
+            list = repository.Get(id).IntermediateCategory.ToList();
 
             return View(list);
 

@@ -13,9 +13,11 @@ namespace ForumProject.Controllers
     public class TopicController : Controller
     {
         ITopicRepository repository;
-        public TopicController(ITopicRepository repository)
+        IIntermediateCategoryRepository repositoryInter;
+        public TopicController(ITopicRepository repository,IIntermediateCategoryRepository repositoryInter)
         {
             this.repository = repository;
+            this.repositoryInter = repositoryInter;
         }
 
         public ViewResult Show_Topics(int id)
@@ -23,13 +25,15 @@ namespace ForumProject.Controllers
 
             ViewBag.IntermediateCategory_Id = id;
 
-            List<Topic> TopicList = repository.Get_Topics_ByIntermediateCategory(id).ToList();
+            //List<Topic> TopicList = repository.Get_Topics_ByIntermediateCategory(id).ToList();
+            List<Topic> TopicList = repositoryInter.Get(id).Topic.ToList();
+           
 
 
             return View(TopicList);
         }
 
-        [Authorize]
+      [Authorize]
         public ViewResult Add_New_Topic(int id)
         {
             //MainCategoryByCities maincategory = repository.Get_MainCategoryByCities_To_Add(id);
@@ -45,15 +49,37 @@ namespace ForumProject.Controllers
         public RedirectToRouteResult Add_New_Topic(Topic topic)
         {
 
-            string UserId= User.Identity.GetUserId();
-            repository.Add_New_Topic_To_Database(topic,UserId);
+            string UserId = User.Identity.GetUserId();
+
+
+
+            repository.Add_To_Topics_And_User(topic, UserId);
 
             return RedirectToAction("Show_Topics",new {controller="Topic",action="Show_Topics",id=topic.IntermediateCategoryId });
         }
 
         public ActionResult Go_To_Topic(int id)
         {
-            TopicViewModel viewModel = repository.Get_Topic_ViewModel(id);
+           
+
+            Topic topic = repository.Get(id);
+
+            List<Comment> commentList = new List<Comment>();
+
+            commentList = topic.Comment.ToList();
+
+            TopicViewModel viewModel = new TopicViewModel();
+            viewModel.topic = topic;
+
+            if (commentList != null)
+            {
+                viewModel.comment_List = commentList;
+            }
+
+            string UserName = topic.ApplicationUser.UserName;
+
+            viewModel.userName = UserName;
+
 
             return View(viewModel);
         }
@@ -63,14 +89,15 @@ namespace ForumProject.Controllers
         public ActionResult Add_New_Comment(int id)
         {
 
-            Topic topic = repository.Get_Topic_By_Id(id);
+            //Topic topic = repository.Get_Topic_By_Id(id);
+            Topic topic = repository.Get(id);
 
             AddingCommentViewModel adding = new AddingCommentViewModel();
 
             adding.topic = topic;
 
 
-            
+
             return View(adding);
             
         }
@@ -80,7 +107,7 @@ namespace ForumProject.Controllers
         public RedirectToRouteResult Add_New_Comment(Comment comment)
         {
             string UserId = User.Identity.GetUserId();
-            repository.Add_New_Comment_To_Topic(comment,UserId);
+            repository.Add_Comment(comment, UserId);
 
             return RedirectToAction("Go_To_Topic", new { controller = "Topic", action = "Go_To_Topic", id = comment.TopicID });
 

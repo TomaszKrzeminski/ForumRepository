@@ -81,91 +81,70 @@ C:\RepoForum\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.Host.
 C:\RepoForum\ForumProject\ForumProject.Tests.Unit\obj\Debug\ForumProject.Tests.Unit.csprojResolveAssemblyReference.cache
 C:\RepoForum\ForumProject\ForumProject.Tests.Unit\obj\Debug\ForumProject.Tests.Unit.dll
 C:\RepoForum\ForumProject\ForumProject.Tests.Unit\obj\Debug\ForumProject.Tests.Unit.pdb
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\ApplicationInsights.config
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\csc.exe
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\csc.exe.config
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\csc.rsp
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\csi.exe
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\csi.rsp
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\System.AppContext.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\System.Collections.Immutable.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\System.Diagnostics.StackTrace.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\System.IO.FileSystem.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\System.IO.FileSystem.Primitives.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\System.Reflection.Metadata.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\vbc.exe
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\vbc.exe.config
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\vbc.rsp
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\VBCSCompiler.exe
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\roslyn\VBCSCompiler.exe.config
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\NUnit3.TestAdapter.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\NUnit3.TestAdapter.pdb
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\nunit.engine.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\nunit.engine.api.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Mono.Cecil.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\ForumProject.Tests.Unit.dll.config
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\ForumProject.Tests.Unit.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\ForumProject.Tests.Unit.pdb
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\ForumProject.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\ForumProject.Domain.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Web.Infrastructure.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Ninject.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Ninject.Web.Common.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Ninject.Web.Mvc.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\nunit.framework.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.Helpers.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.Mvc.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.Razor.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.WebPages.Deployment.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.WebPages.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.WebPages.Razor.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\WebActivator.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.Optimization.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.AspNet.Identity.Core.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.Security.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Owin.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\EntityFramework.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.Security.Cookies.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\ForumProject.Domain.pdb
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\ForumProject.pdb
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\ForumProject.dll.config
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Ninject.pdb
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Ninject.xml
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Ninject.Web.Common.pdb
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Ninject.Web.Common.xml
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Ninject.Web.Mvc.pdb
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Ninject.Web.Mvc.xml
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\nunit.framework.pdb
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\nunit.framework.xml
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.Helpers.xml
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.Mvc.xml
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.Razor.xml
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.WebPages.xml
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.WebPages.Deployment.xml
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.WebPages.Razor.xml
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.xml
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.Optimization.xml
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.AspNet.Identity.Core.xml
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.Security.xml
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\EntityFramework.xml
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.Security.Cookies.xml
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
 C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\obj\Debug\ForumProject.Tests.Unit.csprojResolveAssemblyReference.cache
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\obj\Debug\ForumProject.Tests.Unit.dll
-C:\ForumProjectRepo\ForumProject\ForumProject.Tests.Unit\obj\Debug\ForumProject.Tests.Unit.pdb
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\ApplicationInsights.config
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\NUnit3.TestAdapter.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\NUnit3.TestAdapter.pdb
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\nunit.engine.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\nunit.engine.api.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Mono.Cecil.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\ForumProject.Tests.Unit.dll.config
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\ForumProject.Tests.Unit.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\ForumProject.Tests.Unit.pdb
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\EntityFramework.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\EntityFramework.SqlServer.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\ForumProject.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\ForumProject.Domain.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Moq.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Ninject.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Ninject.Web.Common.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Ninject.Web.Mvc.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\nunit.framework.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.Helpers.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.Mvc.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.Razor.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.WebPages.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\WebActivator.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.Optimization.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.Security.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Owin.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\ForumProject.Domain.pdb
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\EntityFramework.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\EntityFramework.SqlServer.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Moq.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Ninject.pdb
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Ninject.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Ninject.Web.Common.pdb
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Ninject.Web.Common.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Ninject.Web.Mvc.pdb
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Ninject.Web.Mvc.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\nunit.framework.pdb
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\nunit.framework.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.Helpers.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.Mvc.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.Razor.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.WebPages.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\obj\Debug\ForumProject.Tests.Unit.csprojResolveAssemblyReference.cache
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\obj\Debug\ForumProject.Tests.Unit.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\obj\Debug\ForumProject.Tests.Unit.pdb
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\ForumProject.pdb
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\ForumProject.dll.config
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\System.Web.Optimization.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.Security.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Tests.Unit\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
