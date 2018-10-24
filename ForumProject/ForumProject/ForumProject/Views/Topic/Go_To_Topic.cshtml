@@ -1,0 +1,81 @@
+﻿@using ForumProject.Models
+@model TopicViewModel
+
+
+
+@{
+    ViewBag.Title = "Go_To_Topic";
+}
+
+
+
+@*<h2>@Model.topic.TopicName</h2>
+<h6>@Model.userName  @Model.topic.TopicTime</h6>
+<h3>@Model.topic.TopicData</h3>
+
+
+<div>
+   @Html.ActionLink("Add New Comment", "Add_New_Comment", new {controller="Topic",action="Add_New_Comment",id=Model.topic.TopicId }, new {@class="btn btn-block btn-default btn-lg" })
+</div>
+
+
+
+<div>
+    @foreach (var comment in Model.comment_List)
+    {
+        <div>
+            <div>@comment.CommentTime    @comment.ApplicationUser.Email</div>
+            <div>
+
+                @comment.CommentContent
+
+            </div>
+
+
+
+        </div>
+    }
+</div>*@
+
+
+
+
+
+
+
+
+
+        <div class="container">
+        <div class="jumbotron">
+            <h1>@Model.topic.TopicName</h1>
+            <p>
+                @Model.topic.TopicData
+                <h6 class="text-success">@Model.topic.TopicTime.ToShortDateString()  @Model.topic.ApplicationUser.UserName   </h6>
+            </p>
+        </div>
+       
+            @foreach (var comment in Model.comment_List)
+            {
+
+
+                <div class="panel panel-primary ">
+                    <div class="panel-heading text-info">@comment.ApplicationUser.Email @comment.CommentTime.ToShortDateString()</div>
+                    <div class="panel-body">@comment.CommentContent</div>
+                </div>
+
+
+            }
+
+            <div class="col-lg-12">
+                @Html.ActionLink("Add New Comment", "Add_New_Comment", new { controller = "Topic", action = "Add_New_Comment", id = Model.topic.TopicId }, new { @class = "btn btn-block btn-default btn-lg" })
+            </div>
+
+
+    </div>
+
+
+
+
+
+
+        

@@ -1,0 +1,51 @@
+C:\RepoForum\ForumProject\ForumProject.Domain\bin\Debug\ForumProject.Domain.dll
+C:\RepoForum\ForumProject\ForumProject.Domain\bin\Debug\ForumProject.Domain.pdb
+C:\RepoForum\ForumProject\ForumProject.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\RepoForum\ForumProject\ForumProject.Domain\bin\Debug\System.Web.Helpers.dll
+C:\RepoForum\ForumProject\ForumProject.Domain\bin\Debug\System.Web.Mvc.dll
+C:\RepoForum\ForumProject\ForumProject.Domain\bin\Debug\System.Web.Razor.dll
+C:\RepoForum\ForumProject\ForumProject.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\RepoForum\ForumProject\ForumProject.Domain\bin\Debug\System.Web.WebPages.dll
+C:\RepoForum\ForumProject\ForumProject.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\RepoForum\ForumProject\ForumProject.Domain\bin\Debug\System.Web.Helpers.xml
+C:\RepoForum\ForumProject\ForumProject.Domain\bin\Debug\System.Web.Mvc.xml
+C:\RepoForum\ForumProject\ForumProject.Domain\bin\Debug\System.Web.Razor.xml
+C:\RepoForum\ForumProject\ForumProject.Domain\bin\Debug\System.Web.WebPages.xml
+C:\RepoForum\ForumProject\ForumProject.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\RepoForum\ForumProject\ForumProject.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\RepoForum\ForumProject\ForumProject.Domain\obj\Debug\ForumProject.Domain.dll
+C:\RepoForum\ForumProject\ForumProject.Domain\obj\Debug\ForumProject.Domain.pdb
+C:\ForumProjectRepo\ForumProject\ForumProject.Domain\bin\Debug\ForumProject.Domain.dll
+C:\ForumProjectRepo\ForumProject\ForumProject.Domain\bin\Debug\ForumProject.Domain.pdb
+C:\ForumProjectRepo\ForumProject\ForumProject.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\ForumProjectRepo\ForumProject\ForumProject.Domain\bin\Debug\System.Web.Helpers.dll
+C:\ForumProjectRepo\ForumProject\ForumProject.Domain\bin\Debug\System.Web.Mvc.dll
+C:\ForumProjectRepo\ForumProject\ForumProject.Domain\bin\Debug\System.Web.Razor.dll
+C:\ForumProjectRepo\ForumProject\ForumProject.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\ForumProjectRepo\ForumProject\ForumProject.Domain\bin\Debug\System.Web.WebPages.dll
+C:\ForumProjectRepo\ForumProject\ForumProject.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\ForumProjectRepo\ForumProject\ForumProject.Domain\bin\Debug\System.Web.Helpers.xml
+C:\ForumProjectRepo\ForumProject\ForumProject.Domain\bin\Debug\System.Web.Mvc.xml
+C:\ForumProjectRepo\ForumProject\ForumProject.Domain\bin\Debug\System.Web.Razor.xml
+C:\ForumProjectRepo\ForumProject\ForumProject.Domain\bin\Debug\System.Web.WebPages.xml
+C:\ForumProjectRepo\ForumProject\ForumProject.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\ForumProjectRepo\ForumProject\ForumProject.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\ForumProjectRepo\ForumProject\ForumProject.Domain\obj\Debug\ForumProject.Domain.dll
+C:\ForumProjectRepo\ForumProject\ForumProject.Domain\obj\Debug\ForumProject.Domain.pdb
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Domain\bin\Debug\ForumProject.Domain.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Domain\bin\Debug\ForumProject.Domain.pdb
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Domain\bin\Debug\System.Web.Razor.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Domain\bin\Debug\System.Web.Razor.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Domain\obj\Debug\ForumProject.Domain.dll
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject.Domain\obj\Debug\ForumProject.Domain.pdb
