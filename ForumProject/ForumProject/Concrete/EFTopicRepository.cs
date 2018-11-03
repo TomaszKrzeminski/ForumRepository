@@ -2,221 +2,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using ForumProject.Entities;
 using ForumProject.Models;
 using Microsoft.AspNet.Identity;
 using System.Linq.Expressions;
+using System.Runtime.InteropServices;
 
 namespace ForumProject.Concrete
 {
-    //public class EFTopicRepository : ITopicRepository
-    //{
-    //    private ApplicationDbContext context = new ApplicationDbContext();
-
-
-
-    //    public EFTopicRepository(ApplicationDbContext context)
-    //    {
-    //        this.context = context;
-    //    }
-
-
-    //    public EFTopicRepository()
-    //    {
-
-    //    }
-
-
-
-
-
-
-
-
-    //    public IEnumerable<Topic> Topics
-    //    {
-    //        get { return context.Topics; }
-    //    }
-
-    //    public bool Add_New_Comment_To_Topic(Comment comment,string UserId)
-    //    {
-
-    //        Topic topic = context.Topics.Find(comment.TopicID);
-    //        topic.Comment.Add(comment);
-
-    //        ApplicationUser user = context.Users.Find(UserId);
-    //        user.Comments.Add(comment);
-
-    //        context.SaveChanges();
-
-    //        return true;
-
-
-
-
-
-
-    //    }
-
-    //    public bool Add_New_Topic_To_Database(Topic topic,string UserId)
-    //    {
-
-    //        //int MainCategoryId = context.IntermediateCategories.Include("MainCategoryByCities").Where(x => x.IntermediateCategoryId == topic.IntermediateCategoryId).Select(y => y.MainCategoryByCitiesId).First();
-    //        //MainCategoryByCities main = context.MainCategoryByCities.Find(MainCategoryId);
-    //        //main.
-
-    //        ApplicationUser user = context.Users.Find(UserId);
-    //        user.Topics.Add(topic);
-
-
-
-    //        IntermediateCategory inter = context.IntermediateCategories.Find(topic.IntermediateCategoryId);
-    //        inter.Topic.Add(topic);
-    //        context.SaveChanges();
-    //        return true;
-
-
-    //    }
-
-    //    public MainCategoryByCities Get_MainCategoryByCities_To_Add(int id)
-    //    {
-    //        IntermediateCategory inter = context.IntermediateCategories.Include("MainCategoryByCities").Where(x => x.IntermediateCategoryId == id).First();
-
-    //        MainCategoryByCities maincategory = inter.MainCategoryByCities;
-
-    //        return maincategory;
-
-    //    }
-
-    //    public IEnumerable<Topic> Get_Topics_ByIntermediateCategory(int id)
-    //    {
-    //        IntermediateCategory category = context.IntermediateCategories.Include("Topic").Where(x => x.IntermediateCategoryId == id).First();
-    //        IEnumerable<Topic> topics = category.Topic;
-
-    //        return topics;
-    //    }
-
-    //    public Topic Get_Topic_By_Id(int id)
-    //    {
-    //        Topic topic = context.Topics.Find(id);
-
-    //        if(topic!=null)
-    //        {
-    //           return topic;
-    //        }
-    //        else
-    //        {
-    //            Topic t = null;
-               
-    //            return t;
-    //        }
-           
-    //    }
-
-    //    public TopicViewModel Get_Topic_ViewModel(int id)
-    //    {
-    //        Topic topic = context.Topics.Where(t => t.TopicId == id).First();
-    //        List<Comment> commentList = new List<Comment>();
-
-    //        commentList = topic.Comment.ToList();
-
-    //        TopicViewModel viewModel = new TopicViewModel();
-    //        viewModel.topic = topic;
-
-    //        if (commentList != null)
-    //        {
-    //            viewModel.comment_List = commentList;
-    //        }
-
-    //        string UserName = topic.ApplicationUser.UserName;
-
-    //        viewModel.userName = UserName;
-
-
-
-
-    //        return viewModel;
-
-
-
-    //    }
-    //}
-
-    //public class EFMainCategoryByCitiesRepository : IMainCategoryByCitiesRepository
-    //{
-    //    private ApplicationDbContext context = new ApplicationDbContext();
-
-
-    //    public EFMainCategoryByCitiesRepository(ApplicationDbContext context)
-    //    {
-    //        this.context = context;
-    //    }
-
-
-    //    public EFMainCategoryByCitiesRepository()
-    //    {
-
-    //    }
-
-
-
-
-
-    //    public IEnumerable<MainCategoryByCities> MainCategoryByCities
-    //    {
-    //        get { return context.MainCategoryByCities; }
-    //    }
-    //}
-
-
-    //public class EFIntermediateCategoryRepository : IIntermediateCategoryRepository
-    //{
-    //    private ApplicationDbContext context = new ApplicationDbContext();
-
-    //    public EFIntermediateCategoryRepository(ApplicationDbContext context)
-    //    {
-    //        this.context = context;
-    //    }
-
-
-    //    public EFIntermediateCategoryRepository()
-    //    {
-            
-    //    }
-
-
-    //    public IEnumerable<IntermediateCategory> IntermediateCategory
-    //    {
-    //        get { return context.IntermediateCategories; }
-    //    }
-
-    //    public IEnumerable<IntermediateCategory> GetIntermediateCategory_ById(int id)
-    //    {
-
-    //         MainCategoryByCities city=context.MainCategoryByCities.Include("IntermediateCategory").Where(x => x.MainCategoryByCitiesId == id).First();
-    //         IEnumerable<IntermediateCategory> Categories = city.IntermediateCategory.ToList();
-
-    //        if(Categories!=null)
-    //        {
-    //            return Categories;
-    //        }
-    //        else
-    //        {
-    //            return Categories = new List<IntermediateCategory>();
-    //        }
-
-
-    //    }
-    //}
-
-
-
-
-
-
-
-
 
     public class EFTopicRepository : ITopicRepository
     {
@@ -235,14 +28,14 @@ namespace ForumProject.Concrete
 
         }
 
-        public void Add_To_Topics_And_User(Topic topic,string UserId)
+        public void Add_To_Topics_And_User(Topic topic, string UserId)
         {
             this.Add(topic);
 
             ApplicationUser user = context.Users.Find(UserId);
             user.Topics.Add(topic);
             context.SaveChanges();
-      
+
 
         }
 
@@ -261,12 +54,44 @@ namespace ForumProject.Concrete
         public void Remove(Topic entity)
         {
             context.Topics.Remove(entity);
+            context.SaveChanges();
         }
 
         public Topic Get(int id)
         {
-           return context.Topics.Find(id);
+
+            Topic topic;
+
+            topic = context.Topics.Find(id);
+
+            if (topic == null)
+            {
+                topic = new Topic();
+                topic.Comment = new List<Comment>();
+                topic.TopicName = "Error";
+                return topic;
+            }
+
+            return topic;
         }
+
+
+
+        public bool Delete(int id)
+        {
+
+            Topic topic = context.Topics.Find(id);
+            context.Topics.Remove(topic);
+            return true;
+
+
+
+
+
+
+        }
+
+
 
         public IEnumerable<Topic> GetAll()
         {
@@ -280,8 +105,8 @@ namespace ForumProject.Concrete
 
         public void Add_Comment(Comment comment, string UserId)
         {
-     
-  
+
+
 
             Topic topic = context.Topics.Find(comment.TopicID);
             topic.Comment.Add(comment);
@@ -291,7 +116,44 @@ namespace ForumProject.Concrete
 
             context.SaveChanges();
 
-           
+
+        }
+
+
+        public int GetTopicIdCommentId(int id)
+        {
+            Comment comment = context.Comments.Find(id);
+
+            return comment.TopicID;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        public bool DeleteCommentFromTopic(int id)
+        {
+            try
+            {
+                Comment result = context.Comments.Find(id);
+                context.Comments.Remove(result);
+                context.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
     }
 
@@ -308,7 +170,7 @@ namespace ForumProject.Concrete
     {
         private ApplicationDbContext context = new ApplicationDbContext();
 
-        public IEnumerable<MainCategoryByCities> MainCategoryByCities { get {return context.MainCategoryByCities; } }
+        public IEnumerable<MainCategoryByCities> MainCategoryByCities { get { return context.MainCategoryByCities; } }
 
         public EFMainCategoryByCitiesRepository(ApplicationDbContext context)
         {
@@ -334,7 +196,20 @@ namespace ForumProject.Concrete
 
         public MainCategoryByCities Get(int id)
         {
-          return  context.MainCategoryByCities.Find(id);
+
+            MainCategoryByCities result;
+
+            result = context.MainCategoryByCities.Find(id);
+
+            if (result == null)
+            {
+                result = new Entities.MainCategoryByCities();
+                result.CityName = "None";   //Change
+                result.IntermediateCategory = new List<IntermediateCategory>();
+
+            }
+
+            return result;
         }
 
         public IEnumerable<MainCategoryByCities> GetAll()
@@ -345,6 +220,30 @@ namespace ForumProject.Concrete
         public IEnumerable<MainCategoryByCities> Find(Expression<Func<MainCategoryByCities, bool>> predicate)
         {
             return context.MainCategoryByCities.Where(predicate);
+        }
+
+        public bool AddIntermediateCategory(IntermediateCategory category)
+        {
+
+
+            bool result = context.IntermediateCategories.Where(n => n.NameOfMainCategory.ToLower() == category.NameOfMainCategory.ToLower()).Any();
+
+            if (result == true)
+            {
+                return true;
+            }
+            else
+            {
+                MainCategoryByCities main = context.MainCategoryByCities.Find(category.MainCategoryByCitiesId);
+                main.IntermediateCategory.Add(category);
+                context.SaveChanges();
+
+                return false;
+            }
+
+
+
+
         }
     }
 
@@ -380,7 +279,7 @@ namespace ForumProject.Concrete
             get { return context.IntermediateCategories; }
         }
 
-      
+
 
         public void Add(IntermediateCategory entity)
         {
@@ -388,19 +287,78 @@ namespace ForumProject.Concrete
             context.SaveChanges();
         }
 
-        public void Remove(IntermediateCategory entity)
+        public bool Remove(IntermediateCategory entity)
         {
-            context.IntermediateCategories.Remove(entity);
+
+            //MainCategoryByCities main = context.MainCategoryByCities.Find(entity.MainCategoryByCitiesId);
+            //context.IntermediateCategories.Remove(entity);
+            //main.IntermediateCategory.Remove(entity);
+
+            //context.SaveChanges();
+
+            MainCategoryByCities main = context.MainCategoryByCities.Find(entity.MainCategoryByCitiesId);
+
+            if (main.IntermediateCategory.Count <= 1)
+            {
+                return false;
+            }
+            else
+            {
+                context.IntermediateCategories.Remove(entity);
+                main.IntermediateCategory.Remove(entity);
+
+                context.SaveChanges();
+                return true;
+            }
+
+
+
+
+
+
         }
 
         public IntermediateCategory Get(int id)
         {
-            return context.IntermediateCategories.Find(id);
+            IntermediateCategory category;
+            category = context.IntermediateCategories.Find(id);
+
+            if (category == null)
+            {
+                category = new IntermediateCategory();
+                category.NameOfMainCategory = "Error";
+                category.Topic = new List<Topic>();
+                return category;
+            }
+            else
+            {
+                return category;
+            }
+
+
+
+        }
+
+
+        public bool ChangeIntermediateCategory(IntermediateCategory category)
+        {
+
+            if (context.IntermediateCategories.Where(x => x.NameOfMainCategory.ToLower() == category.NameOfMainCategory.ToLower()).Any())
+            {
+                return false;
+            }
+
+            IntermediateCategory result = context.IntermediateCategories.Find(category.IntermediateCategoryId);
+            result.NameOfMainCategory = category.NameOfMainCategory;
+            context.SaveChanges();
+
+            return true;
+
         }
 
         public IEnumerable<IntermediateCategory> GetAll()
         {
-           return context.IntermediateCategories;
+            return context.IntermediateCategories;
         }
 
         public IEnumerable<IntermediateCategory> Find(Expression<Func<IntermediateCategory, bool>> predicate)
@@ -408,20 +366,6 @@ namespace ForumProject.Concrete
             return context.IntermediateCategories.Where(predicate);
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

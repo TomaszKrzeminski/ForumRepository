@@ -14,23 +14,48 @@ namespace ForumProject.Controllers
     {
         ITopicRepository repository;
         IIntermediateCategoryRepository repositoryInter;
+        private Func<string> GetUserId;
         public TopicController(ITopicRepository repository,IIntermediateCategoryRepository repositoryInter)
         {
             this.repository = repository;
             this.repositoryInter = repositoryInter;
+            GetUserId = () => User.Identity.GetUserId();
         }
+
+        
+
+        public TopicController(ITopicRepository repository, IIntermediateCategoryRepository repositoryInter, Func<string> GetUserId)
+        {
+            this.repository = repository;
+            this.repositoryInter = repositoryInter;
+            this.GetUserId = GetUserId;
+
+        }
+
 
         public ViewResult Show_Topics(int id)
         {
 
             ViewBag.IntermediateCategory_Id = id;
 
-            //List<Topic> TopicList = repository.Get_Topics_ByIntermediateCategory(id).ToList();
-            List<Topic> TopicList = repositoryInter.Get(id).Topic.ToList();
+
+            //List<Topic> TopicList = repositoryInter.Get(id).Topic.ToList();
+
+
+            IntermediateCategory category = repositoryInter.Get(id);
+
+            if(category.NameOfMainCategory=="Error")
+            {
+                return View("Error");
+            }
+            else
+            {
+                List<Topic> TopicList = category.Topic.ToList();
+                return View("Show_Topics",TopicList);
+            }
+
+
            
-
-
-            return View(TopicList);
         }
 
       [Authorize]
@@ -58,15 +83,23 @@ namespace ForumProject.Controllers
             return RedirectToAction("Show_Topics",new {controller="Topic",action="Show_Topics",id=topic.IntermediateCategoryId });
         }
 
-        public ActionResult Go_To_Topic(int id)
+        public ViewResult Go_To_Topic(int id)
         {
-           
+
 
             Topic topic = repository.Get(id);
 
+            if(topic.TopicName=="Error")
+            {
+                return View("Error");
+            }
+
             List<Comment> commentList = new List<Comment>();
 
-            commentList = topic.Comment.ToList();
+            if(topic.Comment.ToList().Count>0)
+            {
+                commentList = topic.Comment.ToList();
+            }
 
             TopicViewModel viewModel = new TopicViewModel();
             viewModel.topic = topic;
@@ -82,6 +115,9 @@ namespace ForumProject.Controllers
 
 
             return View(viewModel);
+
+            
+
         }
 
 
@@ -106,7 +142,8 @@ namespace ForumProject.Controllers
         [Authorize]
         public RedirectToRouteResult Add_New_Comment(Comment comment)
         {
-            string UserId = User.Identity.GetUserId();
+            //string UserId = User.Identity.GetUserId();
+            string UserId = GetUserId();
             repository.Add_Comment(comment, UserId);
 
             return RedirectToAction("Go_To_Topic", new { controller = "Topic", action = "Go_To_Topic", id = comment.TopicID });

@@ -1,0 +1,15 @@
+﻿@using  ForumProject.Entities
+@model List<MainCategoryByCities>
+
+
+
+@{
+    ViewBag.Title = "ChangeCities";
+}
+
+<h2>ChangeCities</h2>
+
+@foreach (var item in Model)
+{
+    <div>@item.CityName  @Html.ActionLink("Change Categories", "ChangeCategories", new { controller = "Admin", action = "ChangeCategories", id = item.MainCategoryByCitiesId }, new { @class = "btn btn-info" })</div>
+}

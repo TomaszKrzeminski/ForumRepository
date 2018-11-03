@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace ForumProject.Repository
 {
-    //public interface IReporitory<TEntity> where TEntity : class
-    //{
-    //    void Add(TEntity entity);
-    //    void Remove(TEntity entity);
-    //    TEntity Get(int id);
-    //    IEnumerable<TEntity> GetAll();
-    //    IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate);
-    //}
+
+
+    public interface IRepositoryIdentity
+    {
+        string GetUserId();
+        string GetUserName();
+    }
+   
 }

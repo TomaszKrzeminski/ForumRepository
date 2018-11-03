@@ -1,0 +1,9 @@
+﻿body {
+}
+#headerCity {
+    
+    background-image: url('../images/png-clipart.png');
+    background-repeat: no-repeat;
+    width: 458px;
+    height: 76px;
+}

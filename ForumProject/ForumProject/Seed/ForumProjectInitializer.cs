@@ -1,5 +1,7 @@
 ﻿using ForumProject.Entities;
 using ForumProject.Models;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -52,7 +54,14 @@ namespace ForumProject.Seed
             //defaultIntermediateCategories.Add(new IntermediateCategory { IntermediateCategoryId = 9, NameOfMainCategory = "Praca " });
             //defaultIntermediateCategories.Add(new IntermediateCategory { IntermediateCategoryId = 10, NameOfMainCategory = "Towarzyskie " });
 
-            List<MainCategoryByCities> defaultCities = new List<MainCategoryByCities>();
+
+           
+
+
+
+
+
+            List <MainCategoryByCities> defaultCities = new List<MainCategoryByCities>();
             defaultCities.Add(new MainCategoryByCities { CityName = "Bydgoszcz", IntermediateCategory = new List<IntermediateCategory>() });
             defaultCities.Add(new MainCategoryByCities { CityName = "Chełmno", IntermediateCategory = new List<IntermediateCategory>() });
             defaultCities.Add(new MainCategoryByCities { CityName = "Grudziądz", IntermediateCategory = new List<IntermediateCategory>() });
@@ -96,9 +105,32 @@ namespace ForumProject.Seed
 
 
 
+            var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
+            string[] roleNames = new string[] { "Administrator", "User" };
+            IdentityResult roleResult;
+            foreach (var roleName in roleNames)
+            {
+                if (!roleManager.RoleExists(roleName))
+                {
+                    roleResult = roleManager.Create(new IdentityRole(roleName));
+                }
+            }
 
+            context.SaveChanges();
 
+            if (!context.Users.Any(u => u.UserName == "koral2323@gmail.com"))
+            {
+                var store = new UserStore<ApplicationUser>(context);
+                var manager = new UserManager<ApplicationUser>(store);
+                var user = new ApplicationUser { UserName = "koral2323@gmail.com" };
+                user.Email = "koral2323@gmail.com";
+               
 
+                manager.Create(user, "Daria21081985@");
+                manager.AddToRole(user.Id, "Administrator");
+            }
+
+            context.SaveChanges();
 
 
 

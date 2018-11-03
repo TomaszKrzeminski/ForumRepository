@@ -110,10 +110,6 @@ C:\ForumProjectRepo\ForumProject\ForumProject\obj\Debug\ForumProject.WebUI.cspro
 C:\ForumProjectRepo\ForumProject\ForumProject\obj\Debug\ForumProject.Migrations.InitialCreate.resources
 C:\ForumProjectRepo\ForumProject\ForumProject\obj\Debug\ForumProject.Migrations.Comments.resources
 C:\ForumProjectRepo\ForumProject\ForumProject\obj\Debug\ForumProject.WebUI.csproj.GenerateResource.Cache
-C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.WebUI.csprojResolveAssemblyReference.cache
-C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.Migrations.InitialCreate.resources
-C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.Migrations.Comments.resources
-C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.WebUI.csproj.GenerateResource.Cache
 C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\ApplicationInsights.config
 C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\csc.exe
 C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\roslyn\csc.exe.config
@@ -221,5 +217,10 @@ C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.AI.Dependenc
 C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.AI.WindowsServer.xml
 C:\Repzozytorium Zastępcze\ForumProject\ForumProject\bin\Microsoft.AI.Web.xml
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.WebUI.csprojResolveAssemblyReference.cache
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.Migrations.InitialCreate.resources
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.Migrations.Comments.resources
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.Migrations.Roles.resources
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.WebUI.csproj.GenerateResource.Cache
 C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.dll
 C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.pdb

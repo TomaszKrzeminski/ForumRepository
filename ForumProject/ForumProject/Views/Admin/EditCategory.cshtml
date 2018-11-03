@@ -1,0 +1,23 @@
+﻿@using ForumProject.Entities
+@model IntermediateCategory
+@{
+    ViewBag.Title = "EditCategory";
+}
+
+<h2>EditCategory</h2>
+
+@using (Html.BeginForm("EditCategory", "Admin"))
+    {
+    <div>
+        @Html.EditorFor(x=>x.NameOfMainCategory)
+    </div>
+    <div>
+        @Html.HiddenFor(x => x.IntermediateCategoryId)
+    </div>
+   <div>
+       <input type="submit" value="Change" class="btn btn-danger" />
+   </div>
+
+
+
+}

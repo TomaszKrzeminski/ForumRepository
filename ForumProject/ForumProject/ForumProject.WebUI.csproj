@@ -206,6 +206,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Concrete\EFTopicRepository.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\TopicController.cs" />
@@ -222,6 +223,10 @@
     <Compile Include="Migrations\201810100956033_Comments.Designer.cs">
       <DependentUpon>201810100956033_Comments.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810211354102_Roles.cs" />
+    <Compile Include="Migrations\201810211354102_Roles.Designer.cs">
+      <DependentUpon>201810211354102_Roles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AddingCommentViewModel.cs" />
@@ -237,10 +242,16 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\8c38f7203b308ffda9ad846e397b908b.jpg" />
+    <Content Include="images\building_PNG33.png" />
+    <Content Include="images\indeks.jpg" />
+    <Content Include="images\png-clipart.png" />
+    <Content Include="images\rainbow-spectrum-color-animation-vj-loop_4yfvtoi7e__F0000.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -297,6 +308,18 @@
     <Content Include="Views\Topic\Add_New_Topic.cshtml" />
     <Content Include="Views\Topic\Go_To_Topic.cshtml" />
     <Content Include="Views\Topic\Add_New_Comment.cshtml" />
+    <Content Include="Views\Topic\Error.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\ChangeCities.cshtml" />
+    <Content Include="Views\Admin\ChangeCategories.cshtml" />
+    <Content Include="Views\Admin\AddCategory.cshtml" />
+    <Content Include="Views\Admin\CategoryExists.cshtml" />
+    <Content Include="Views\Admin\SuccesAddingCategory.cshtml" />
+    <Content Include="Views\Admin\DeleteCategory.cshtml" />
+    <Content Include="Views\Admin\EditCategory.cshtml" />
+    <Content Include="Views\Admin\ErrorCategoryExists.cshtml" />
+    <Content Include="Views\Admin\ErrorDelecting.cshtml" />
+    <Content Include="Views\Admin\Error.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -328,6 +351,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201810100956033_Comments.resx">
       <DependentUpon>201810100956033_Comments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810211354102_Roles.resx">
+      <DependentUpon>201810211354102_Roles.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

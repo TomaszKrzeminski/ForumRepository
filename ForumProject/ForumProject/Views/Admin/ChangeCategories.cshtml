@@ -1,0 +1,20 @@
+﻿@using ForumProject.Entities
+@model List<IntermediateCategory>
+
+
+
+@{
+    ViewBag.Title = "ChangeCategories";
+}
+
+<h2>ChangeCategories</h2>
+
+@foreach (var item in Model)
+{
+    <div>@item.NameOfMainCategory    <span>@Html.ActionLink("Edit Category","EditCategory",new {controller="Admin",action="EditCategory",id=item.IntermediateCategoryId },new {@class="btn btn-danger" })</span>   <span>@Html.ActionLink("Delete Category", "DeleteCategory", new { controller = "Admin", action = "DeleteCategory", id = item.IntermediateCategoryId }, new { @class = "btn btn-danger" })</span>               </div>
+}
+
+
+<div>
+    @Html.ActionLink("Add Category", "AddCategory", new {controller="Admin",action="AddCategory",id=Model.First().MainCategoryByCitiesId }, new { @class="btn  btn-primary"})
+</div>

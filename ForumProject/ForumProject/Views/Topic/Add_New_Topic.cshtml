@@ -4,51 +4,57 @@
     ViewBag.Title = "Add_New_Topic";
 }
 
-<h2>Add_New_Topic</h2>
+<div class="container">
+    <hr />
+    <div class="row col-lg-4 col-lg-push-4">
+        <p ><span class="h1 text-center">Add Topic</span></p>
+        @using (Html.BeginForm("Add_New_Topic", "Topic"))
+        {
+
+            <div class="form-horizontal">
+
+
+                <div class="form-group">
+                    <label>Topic Name</label>
+                    @Html.TextBox("TopicName", Model.TopicName)
+                </div>
+
+                <div class="form-group">
+                    <label>Topic Data</label>
+                    @Html.TextArea("TopicData")
+
+                </div>
+
+
+
+
+                <div class="form-group">
+
+                    @Html.Hidden("TopicTime", DateTime.Now)
+                </div>
+
+
+                <div>
+
+                    @Html.Hidden("IntermediateCategoryId", (int)ViewBag.InterId)
+                </div>
 
 
 
 
 
-<div class="col-md-3 ">
-    @using (Html.BeginForm("Add_New_Topic", "Topic"))
-            {
+                <input class="btn btn-warning col-md-9" type="submit" value="New Topic" />
 
-             
-
-
-       <div>
-           <label>Topic Name</label>
-           @Html.TextBox("TopicName",Model.TopicName)
-       </div>
-
-       <div>
-           <label>Topic Data</label>
-           @Html.TextArea("TopicData")
-
-       </div>
+            </div>
+        }
 
 
-
-
-    <div>
-      
-        @Html.Hidden("TopicTime", DateTime.Now)
     </div>
-
-
-    <div>
-
-        @Html.Hidden("IntermediateCategoryId",(int)ViewBag.InterId)
-    </div>
-
-
-
-
-
-        <input class="btn btn-warning col-md-9" type="submit" value="New Topic" />
-
-
-    }
-
 </div>
+
+
+
+
+
+
+   

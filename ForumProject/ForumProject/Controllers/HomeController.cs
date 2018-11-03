@@ -40,9 +40,17 @@ namespace ForumProject.Controllers
         {
             List<IntermediateCategory> list = new List<IntermediateCategory>();
 
-            
 
-            list = repository.Get(id).IntermediateCategory.ToList();
+
+            //list = repository.Get(id).IntermediateCategory.ToList();
+            MainCategoryByCities result = repository.Get(id);
+
+            if(result.IntermediateCategory.Count!=0)
+            {
+                list = result.IntermediateCategory.ToList();
+            }
+
+
 
             return View(list);
 

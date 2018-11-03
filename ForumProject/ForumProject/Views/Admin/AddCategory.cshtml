@@ -1,0 +1,27 @@
+﻿@using ForumProject.Entities
+@model IntermediateCategory
+@{
+    ViewBag.Title = "AddCategory";
+}
+
+<h2>AddCategory</h2>
+
+
+
+@using (Html.BeginForm("AddCategory", "Admin"))
+{
+
+    <div>
+        @Html.Hidden("MainCategoryByCitiesId",Model.MainCategoryByCitiesId)
+    </div>
+    <div>
+        @Html.TextBox("NameOfMainCategory")
+    </div>
+
+    <div>
+        <input type="submit" value="Add" class="btn btn-primary" /> 
+    </div>
+
+
+
+}
