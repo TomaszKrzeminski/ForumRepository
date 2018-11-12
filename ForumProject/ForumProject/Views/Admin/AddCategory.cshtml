@@ -2,10 +2,30 @@
 @model IntermediateCategory
 @{
     ViewBag.Title = "AddCategory";
+    
 }
 
 <h2>AddCategory</h2>
 
+ <style type="text/css">
+    .field-validation-error {
+        color: #f00;
+    }
+
+    .validation-summary-errors {
+        color: firebrick;
+        font-weight: bold;
+    }
+
+    .input-validation-error {
+        border: 2px solid #f00;
+        background-color: #fee;
+    }
+
+    input[type="checkbox"].input-validation-error {
+        outline: 2px solid #f00;
+    }
+</style>
 
 
 @using (Html.BeginForm("AddCategory", "Admin"))
@@ -15,6 +35,7 @@
         @Html.Hidden("MainCategoryByCitiesId",Model.MainCategoryByCitiesId)
     </div>
     <div>
+        <p>@Html.ValidationMessage("NameOfMainCategory")</p>
         @Html.TextBox("NameOfMainCategory")
     </div>
 
@@ -24,4 +45,11 @@
 
 
 
+}
+
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
 }

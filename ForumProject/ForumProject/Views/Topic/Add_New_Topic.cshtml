@@ -3,7 +3,13 @@
 @{
     ViewBag.Title = "Add_New_Topic";
 }
-
+<style type="text/css">
+    .field-validation-error{color:#f00;}
+    .validation-summary-errors{color:f00#;font-weight:bold;}
+    .input-validation-error{border:2px solid #f00;background-color:#fee;}
+    input[type="checkbox"].input-validation-error{outline:2px solid #f00;}
+    
+    </style>
 <div class="container">
     <hr />
     <div class="row col-lg-4 col-lg-push-4">
@@ -13,13 +19,15 @@
 
             <div class="form-horizontal">
 
-
+                <p>@Html.ValidationMessageFor(x => x.TopicName)</p>
                 <div class="form-group">
+                    
                     <label>Topic Name</label>
                     @Html.TextBox("TopicName", Model.TopicName)
                 </div>
-
+                <p>@Html.ValidationMessageFor(x => x.TopicData)</p>
                 <div class="form-group">
+                    
                     <label>Topic Data</label>
                     @Html.TextArea("TopicData")
 
@@ -52,8 +60,9 @@
     </div>
 </div>
 
-
-
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
 
 
 

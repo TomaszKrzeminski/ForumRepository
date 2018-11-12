@@ -18,3 +18,9 @@
 <div>
     @Html.ActionLink("Add Category", "AddCategory", new {controller="Admin",action="AddCategory",id=Model.First().MainCategoryByCitiesId }, new { @class="btn  btn-primary"})
 </div>
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

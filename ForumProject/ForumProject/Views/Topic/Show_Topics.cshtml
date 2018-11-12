@@ -29,12 +29,26 @@
     <div class="col-lg-12"><div>@Html.ActionLink("Add New Topic", "Add_New_Topic", new { controller = "Topic", action = "Add_New_Topic", id = ViewBag.IntermediateCategory_Id }, new { @class = "btn btn-primary  " })</div></div>
     </div>
 <div class="col-lg-8 col-md-6 col-sm-8 col-xs-12">
-    @foreach (var topic in Model)
-    {<div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">@Html.ActionLink(@topic.TopicName, "Go_To_Topic", new { controller = "Topic", action = "Go_To_Topic", id = @topic.TopicId }, new { @class = "label label-info col-lg-4 col-md-6 col-sm-12 col-xs-12 " })   <p class="col-lg-4  hidden-md hidden-sm hidden-xs">@topic.ApplicationUser.UserName</p><p class="col-lg-4 col-md-6 hidden-sm hidden-xs">@topic.IntermediateCategory.NameOfMainCategory</p> <div>@Html.ActionLink("Delete","DeleteTopic",new { controller = "Admin", action = "DeleteTopic", id =topic.TopicId},new {@class="btn btn-primary" })</div>     </div>
-    </div>
 
-    }
+   
+   
+        @foreach (var topic in Model)
+        {<div class="row">
+        @if (topic.ApplicationUser != null)
+        {
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                @Html.ActionLink(@topic.TopicName, "Go_To_Topic", new { controller = "Topic", action = "Go_To_Topic", id = @topic.TopicId }, new { @class = "label label-info col-lg-4 col-md-6 col-sm-12 col-xs-12 " })   <p class="col-lg-4  hidden-md hidden-sm hidden-xs">@topic.ApplicationUser.UserName</p><p class="col-lg-4 col-md-6 hidden-sm hidden-xs">@topic.IntermediateCategory.NameOfMainCategory</p>
+                <div>@if (User.IsInRole("Administrator")) { @Html.ActionLink("Delete", "DeleteTopic", new { controller = "Admin", action = "DeleteTopic", id = topic.TopicId }, new { @class = "btn btn-primary" }); }</div>
+
+           </div>
+        }
+
+            </div>
+      
+        }
+  
+
+   
 </div>
    
 

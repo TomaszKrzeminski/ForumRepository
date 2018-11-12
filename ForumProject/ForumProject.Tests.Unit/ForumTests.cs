@@ -189,7 +189,7 @@ namespace ForumProject.Tests.Unit
             Topic topic = new Topic();
             topic.IntermediateCategoryId = 3;
 
-            RedirectToRouteResult result = controller.Add_New_Topic(topic);
+            RedirectToRouteResult result = controller.Add_New_Topic(topic) as RedirectToRouteResult;
 
             Assert.AreEqual(result.RouteValues["action"], "Show_Topics");
             Assert.AreEqual(result.RouteValues["controller"], "Topic");
@@ -344,7 +344,7 @@ namespace ForumProject.Tests.Unit
 
             TopicController controller = new TopicController(topicRepo.Object, interRepo.Object, () => "koral2323");
 
-            RedirectToRouteResult result = controller.Add_New_Comment(new Comment() { CommentContent = "None", CommentID = 1, TopicID = 1 });
+            RedirectToRouteResult result = controller.Add_New_Comment(new Comment() { CommentContent = "None", CommentID = 1, TopicID = 1 }) as RedirectToRouteResult;
 
 
             Assert.AreEqual(result.RouteValues["action"], "Go_To_Topic");

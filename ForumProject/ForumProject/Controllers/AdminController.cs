@@ -6,9 +6,11 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using ForumProject.Entities;
+using System.Web.Security;
 
 namespace ForumProject.Controllers
 {
+    [Authorize(Roles= "Administrator")]
     public class AdminController : Controller
     {
 
@@ -108,7 +110,17 @@ namespace ForumProject.Controllers
         [HttpPost]
         public ActionResult AddCategory(IntermediateCategory result)
         {
+            //if(string.IsNullOrEmpty(result.NameOfMainCategory))
+            //{
+            //    ModelState.AddModelError("NameOfMainCategory", "Rubryka nie może być pusta");
+            //}
 
+            if(!ModelState.IsValid)
+            {
+                
+                return View(result);
+
+            }
 
             bool DoesItExist = repositoryMain.AddIntermediateCategory(result);
 
@@ -168,7 +180,23 @@ namespace ForumProject.Controllers
 
         [HttpPost]
         public ActionResult EditCategory(IntermediateCategory category)
-        {
+       {
+           
+            
+
+                      
+
+           
+
+
+            if(!ModelState.IsValid)
+            {
+
+                return View(category);
+            }
+
+
+
             IntermediateCategory result = repositoryInter.Get(category.IntermediateCategoryId);
 
             //if(result.NameOfMainCategory=="Error")

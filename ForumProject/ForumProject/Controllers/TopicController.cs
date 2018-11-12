@@ -71,8 +71,13 @@ namespace ForumProject.Controllers
 
 
         [HttpPost]
-        public RedirectToRouteResult Add_New_Topic(Topic topic)
+        public ActionResult Add_New_Topic(Topic topic)
         {
+            if(!ModelState.IsValid)
+            {
+                ViewBag.InterId = topic.IntermediateCategoryId;
+                return View(topic);
+            }
 
             string UserId = User.Identity.GetUserId();
 
@@ -140,8 +145,23 @@ namespace ForumProject.Controllers
 
         [HttpPost]
         [Authorize]
-        public RedirectToRouteResult Add_New_Comment(Comment comment)
+        public ActionResult Add_New_Comment(Comment comment)
         {
+
+            if(!ModelState.IsValid)
+            {
+
+                Topic topic = repository.Get(comment.TopicID);
+
+                AddingCommentViewModel adding = new AddingCommentViewModel();
+
+                adding.topic = topic;
+
+
+                return View(adding);
+
+            }
+
             //string UserId = User.Identity.GetUserId();
             string UserId = GetUserId();
             repository.Add_Comment(comment, UserId);

@@ -214,6 +214,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\MustBeAWordAttribute.cs" />
     <Compile Include="Infrastructure\NinjectDependencyResolver.cs" />
     <Compile Include="Migrations\201810091538271_InitialCreate.cs" />
     <Compile Include="Migrations\201810091538271_InitialCreate.Designer.cs">
@@ -226,6 +227,22 @@
     <Compile Include="Migrations\201810211354102_Roles.cs" />
     <Compile Include="Migrations\201810211354102_Roles.Designer.cs">
       <DependentUpon>201810211354102_Roles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811051357110_Model Errors.cs" />
+    <Compile Include="Migrations\201811051357110_Model Errors.Designer.cs">
+      <DependentUpon>201811051357110_Model Errors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811051421599_Nowa.cs" />
+    <Compile Include="Migrations\201811051421599_Nowa.Designer.cs">
+      <DependentUpon>201811051421599_Nowa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811061947021_Required.cs" />
+    <Compile Include="Migrations\201811061947021_Required.Designer.cs">
+      <DependentUpon>201811061947021_Required.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811081942294_Validation2.cs" />
+    <Compile Include="Migrations\201811081942294_Validation2.Designer.cs">
+      <DependentUpon>201811081942294_Validation2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -354,6 +371,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201810211354102_Roles.resx">
       <DependentUpon>201810211354102_Roles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811051357110_Model Errors.resx">
+      <DependentUpon>201811051357110_Model Errors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811051421599_Nowa.resx">
+      <DependentUpon>201811051421599_Nowa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811061947021_Required.resx">
+      <DependentUpon>201811061947021_Required.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811081942294_Validation2.resx">
+      <DependentUpon>201811081942294_Validation2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

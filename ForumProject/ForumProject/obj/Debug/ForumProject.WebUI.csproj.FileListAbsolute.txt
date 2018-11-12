@@ -224,3 +224,7 @@ C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.Mig
 C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.WebUI.csproj.GenerateResource.Cache
 C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.dll
 C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.pdb
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.Migrations.ModelErrors.resources
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.Migrations.Nowa.resources
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.Migrations.Required.resources
+C:\Repzozytorium Zastępcze\ForumProject\ForumProject\obj\Debug\ForumProject.Migrations.Validation2.resources

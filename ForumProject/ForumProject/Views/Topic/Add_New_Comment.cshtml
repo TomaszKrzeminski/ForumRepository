@@ -44,6 +44,25 @@
 
 </div>*@
 
+<style type="text/css">
+    .field-validation-error {
+        color: #f00;
+    }
+
+    .validation-summary-errors {
+        color: firebrick;
+        font-weight: bold;
+    }
+
+    .input-validation-error {
+        border: 2px solid #f00;
+        background-color: #fee;
+    }
+
+    input[type="checkbox"].input-validation-error {
+        outline: 2px solid #f00;
+    }
+</style>
 
 <div class="container">
     <div class="row">
@@ -78,6 +97,7 @@
 
                 <div class="form-group">
                     <label>Comment content</label>
+                    <p>@Html.ValidationMessage("CommentContent")</p>
                     <div>@Html.TextArea("CommentContent")</div>
                 </div>
 
@@ -100,6 +120,11 @@
             </div>
         }
 
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
     </div>
 
 
@@ -108,3 +133,4 @@
 
 
 </div>
+

@@ -6,9 +6,33 @@
 
 <h2>EditCategory</h2>
 
+<style type="text/css">
+    .field-validation-error {
+        color: #f00;
+    }
+
+    .validation-summary-errors {
+        color: firebrick;
+        font-weight: bold;
+    }
+
+    .input-validation-error {
+        border: 2px solid #f00;
+        background-color: #fee;
+    }
+
+    input[type="checkbox"].input-validation-error {
+        outline: 2px solid #f00;
+    }
+</style>
+
+
+
+
 @using (Html.BeginForm("EditCategory", "Admin"))
     {
     <div>
+        <p>@Html.ValidationMessageFor(v=>v.NameOfMainCategory)</p>
         @Html.EditorFor(x=>x.NameOfMainCategory)
     </div>
     <div>
@@ -20,4 +44,9 @@
 
 
 
+}
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
 }

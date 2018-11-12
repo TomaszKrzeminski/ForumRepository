@@ -1,4 +1,5 @@
-﻿using ForumProject.Models;
+﻿using ForumProject.Infrastructure;
+using ForumProject.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -20,7 +21,8 @@ namespace ForumProject.Entities
     public class IntermediateCategory
     {
         public int IntermediateCategoryId { get; set; }
-
+        [Required(ErrorMessage="Pole nie może być puste")]
+        [MustBeAWord(ErrorMessage ="Nazwa nie może zawierać liczby ani być liczbą")]
         public string NameOfMainCategory { get; set; }
 
         //public ICollection<MainCategoryByCities> MainCategoryByCities { get; set; }
@@ -40,9 +42,9 @@ namespace ForumProject.Entities
     public class Topic
     {
         public int TopicId { get; set; }
-
+        [Required]
         public string TopicName { get; set; }
-
+        [Required]
         public string TopicData { get; set; }
 
         [DataType(DataType.Date)]
@@ -65,7 +67,7 @@ namespace ForumProject.Entities
     public class Comment
     {
         public int CommentID { get; set; }
-
+        [Required]
         public string CommentContent { get; set; }
 
         [DataType(DataType.Date)]

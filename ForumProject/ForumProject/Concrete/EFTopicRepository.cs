@@ -30,7 +30,8 @@ namespace ForumProject.Concrete
 
         public void Add_To_Topics_And_User(Topic topic, string UserId)
         {
-            this.Add(topic);
+            context.Topics.Add(topic);
+            
 
             ApplicationUser user = context.Users.Find(UserId);
             user.Topics.Add(topic);

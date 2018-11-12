@@ -59,7 +59,7 @@
 
 
                 <div class="panel panel-primary ">
-                    <div class="panel-heading text-info">@comment.ApplicationUser.Email @comment.CommentTime.ToShortDateString()  @Html.ActionLink("Remove", "RemoveComment", new { controller = "Admin", action = "RemoveComment", id =comment.CommentID},new {@class="btn btn-info" }) </div>
+                    <div class="panel-heading text-info">@comment.ApplicationUser.Email @comment.CommentTime.ToShortDateString() @if(User.IsInRole("Administrator")){ @Html.ActionLink("Remove", "RemoveComment", new { controller = "Admin", action = "RemoveComment", id = comment.CommentID }, new { @class = "btn btn-info" }); }  </div>
                     <div class="panel-body">@comment.CommentContent</div>
                 </div>
 
