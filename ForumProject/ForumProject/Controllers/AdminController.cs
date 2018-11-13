@@ -118,7 +118,7 @@ namespace ForumProject.Controllers
             if(!ModelState.IsValid)
             {
                 
-                return View(result);
+                return View("AddCategory",result);
 
             }
 
@@ -181,22 +181,14 @@ namespace ForumProject.Controllers
         [HttpPost]
         public ActionResult EditCategory(IntermediateCategory category)
        {
-           
-            
-
-                      
-
-           
-
-
+                    
+          
             if(!ModelState.IsValid)
             {
 
-                return View(category);
+                return View("EditCategory",category);
             }
-
-
-
+            
             IntermediateCategory result = repositoryInter.Get(category.IntermediateCategoryId);
 
             //if(result.NameOfMainCategory=="Error")

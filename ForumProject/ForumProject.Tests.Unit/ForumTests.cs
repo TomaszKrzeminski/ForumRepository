@@ -894,5 +894,115 @@ namespace ForumProject.Tests.Unit
 
 
         }
+
+
+
+
+        //Model Validation Tests
+
+
+        [Test]
+        public void Add_New_Topic_Dont_Save_InValid_Changes()
+        {
+            Mock<ITopicRepository> repositoryTopic = new Mock<ITopicRepository>();
+            Mock<IIntermediateCategoryRepository> repositoryInter = new Mock<IIntermediateCategoryRepository>();
+
+            TopicController controller = new TopicController(repositoryTopic.Object,repositoryInter.Object,()=>"ewa2323");
+            Topic topic = new Topic() {TopicName=null,TopicData=null };
+            controller.ModelState.AddModelError("TopicName", "Pole nie może pozostawać puste");
+            controller.ModelState.AddModelError("TopicData", "Pole nie może pozostawać puste");
+            ActionResult result = controller.Add_New_Topic(topic);
+
+            repositoryTopic.Verify(x => x.Add_To_Topics_And_User(It.IsAny<Topic>(),It.IsAny<string>()), Times.Never);
+
+
+        }
+
+        [Test]
+        public void Add_New_Topic_Dont_Save_Changes_Return_View_Add_New_Topic()
+        {
+            Mock<ITopicRepository> repositoryTopic = new Mock<ITopicRepository>();
+            Mock<IIntermediateCategoryRepository> repositoryInter = new Mock<IIntermediateCategoryRepository>();
+
+            TopicController controller = new TopicController(repositoryTopic.Object, repositoryInter.Object, () => "ewa2323");
+            Topic topic = new Topic() { TopicName = null, TopicData = null };
+            controller.ModelState.AddModelError("TopicName", "Pole nie może pozostawać puste");
+            controller.ModelState.AddModelError("TopicData", "Pole nie może pozostawać puste");
+            ViewResult result =(ViewResult)controller.Add_New_Topic(topic);
+            Assert.AreEqual( "Add_New_Topic", result.ViewName);
+           
+
+
+        }
+
+
+
+        [Test]
+        public void Add_New_Comment_Dont_Save_InValid_Changes()
+        {
+            Mock<ITopicRepository> repositoryTopic = new Mock<ITopicRepository>();
+            Mock<IIntermediateCategoryRepository> repositoryInter = new Mock<IIntermediateCategoryRepository>();
+
+            TopicController controller = new TopicController(repositoryTopic.Object, repositoryInter.Object, () => "ewa2323");
+           Comment comment = new Comment() { CommentContent = null};
+            controller.ModelState.AddModelError("CommentContent", "Pole nie może pozostawać puste");
+          
+            ActionResult result = controller.Add_New_Comment(comment);
+            ViewResult resultView = (ViewResult)result;
+
+            repositoryTopic.Verify(x => x.Add_Comment(It.IsAny<Comment>(), It.IsAny<string>()), Times.Never);
+            Assert.AreEqual(resultView.ViewName, "Add_New_Comment");
+
+        }
+
+
+        [Test]
+        public void Add_Category_Dont_Save_InValid_Changes()
+        {
+            Mock<ITopicRepository> repositoryTopic = new Mock<ITopicRepository>();
+            Mock<IIntermediateCategoryRepository> repositoryInter = new Mock<IIntermediateCategoryRepository>();
+            Mock<IMainCategoryByCitiesRepository> repositoryMain = new Mock<IMainCategoryByCitiesRepository>();
+
+            AdminController controller = new AdminController(repositoryTopic.Object, repositoryInter.Object, repositoryMain.Object);
+            IntermediateCategory category = new IntermediateCategory() { NameOfMainCategory=null };
+            controller.ModelState.AddModelError("NameOfMainCategory", "Pole nie może pozostawać puste");
+
+            ActionResult result = controller.AddCategory(category);
+            ViewResult resultView = (ViewResult)result;
+
+            repositoryMain.Verify(x => x.AddIntermediateCategory(It.IsAny<IntermediateCategory>()),Times.Never);
+            Assert.AreEqual(resultView.ViewName, "AddCategory");
+
+      
+        }
+
+        [Test]
+        public void Edit_Category_Dont_Save_InValid_Changes()
+        {
+            Mock<ITopicRepository> repositoryTopic = new Mock<ITopicRepository>();
+            Mock<IIntermediateCategoryRepository> repositoryInter = new Mock<IIntermediateCategoryRepository>();
+            Mock<IMainCategoryByCitiesRepository> repositoryMain = new Mock<IMainCategoryByCitiesRepository>();
+
+            AdminController controller = new AdminController(repositoryTopic.Object, repositoryInter.Object, repositoryMain.Object);
+            IntermediateCategory category = new IntermediateCategory() { NameOfMainCategory = null };
+            controller.ModelState.AddModelError("NameOfMainCategory", "Pole nie może pozostawać puste");
+
+            ActionResult result = controller.EditCategory(category);
+            ViewResult resultView = (ViewResult)result;
+
+            repositoryInter.Verify(x => x.ChangeIntermediateCategory(It.IsAny<IntermediateCategory>()), Times.Never);
+            Assert.AreEqual(resultView.ViewName, "EditCategory");
+
+
+        }
+
+
+
+
+
+
+
+
+
     }
 }

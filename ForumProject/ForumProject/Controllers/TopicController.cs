@@ -75,11 +75,13 @@ namespace ForumProject.Controllers
         {
             if(!ModelState.IsValid)
             {
+              var list=ModelState.Values;
                 ViewBag.InterId = topic.IntermediateCategoryId;
-                return View(topic);
+                return View("Add_New_Topic",topic);
             }
 
-            string UserId = User.Identity.GetUserId();
+            //string UserId = User.Identity.GetUserId();
+            string UserId = GetUserId();
 
 
 
@@ -158,7 +160,7 @@ namespace ForumProject.Controllers
                 adding.topic = topic;
 
 
-                return View(adding);
+                return View("Add_New_Comment",adding);
 
             }
 
