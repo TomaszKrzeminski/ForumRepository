@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace ForumProject.Controllers
 {
+  
     public class HomeController : Controller
     {
 
@@ -26,7 +27,7 @@ namespace ForumProject.Controllers
         {
             return View();
         }
-
+        //[Route("ShowMainCategories")]
         public ViewResult List()
         {
 
@@ -35,7 +36,7 @@ namespace ForumProject.Controllers
         }
 
 
-
+       
         public ViewResult Show_IntermediateCategory_List(int id)
         {
             List<IntermediateCategory> list = new List<IntermediateCategory>();
