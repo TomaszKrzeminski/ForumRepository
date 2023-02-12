@@ -123,10 +123,10 @@ namespace ForumProject.Seed
                 var store = new UserStore<ApplicationUser>(context);
                 var manager = new UserManager<ApplicationUser>(store);
                 var user = new ApplicationUser { UserName = "koral2323@gmail.com" };
-                user.Email = "koral2323@gmail.com";
+                user.Email = "brak";
                
 
-                manager.Create(user, "Daria21081985@");
+                manager.Create(user, "brak");
                 manager.AddToRole(user.Id, "Administrator");
             }
 
